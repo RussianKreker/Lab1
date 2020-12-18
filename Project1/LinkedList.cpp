@@ -198,7 +198,7 @@ void LinkedList::clear()
 void LinkedList::set(size_t index, int newElem)
 {
 	if (index >= size) {
-		throw out_of_range("Index is greater than list size");
+		throw out_of_range("out of range");
 	}
 	Node* current = head;
 	size_t counter = 0;
