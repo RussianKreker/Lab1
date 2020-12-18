@@ -92,7 +92,7 @@ void LinkedList::pop_front()
 void LinkedList::insert(int newElem, size_t index)
 {
 	if (index >= size) {
-		throw out_of_range("Index is greater than list size");
+		throw out_of_range("out of range");
 	}
 	else if (index == 0) {
 		push_front(newElem);
@@ -120,7 +120,7 @@ void LinkedList::insert(int newElem, size_t index)
 int LinkedList::at(size_t index)
 {
 	if (index >= size) {
-		throw out_of_range("Index is greater than list size");
+		throw out_of_range("out of range");
 	}
 	else {
 		Node* current = head;
@@ -136,7 +136,7 @@ int LinkedList::at(size_t index)
 void LinkedList::remove(size_t index)
 {
 	if (index >= size) {
-		throw out_of_range("Index is greater than list size");
+		throw out_of_range("out of range");
 	}
 	else if (index == 0) {
 		pop_front();
